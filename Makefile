@@ -1,4 +1,5 @@
 PATH := ./node_modules/.bin:${PATH}
+V = @ 					# verbose 
 
 .PHONY : init clean-docs clean build test dist publish
 
@@ -15,10 +16,13 @@ clean: clean-docs
 		rm -rf lib/ test/*.js
 
 build:
-		coffee -o lib/ -c src/ && coffee -c test/pregel.coffee
+		$(V)coffee -o lib/ -c src/ && coffee -c test/pregel.coffee
+
+shell:
+		$(V)coffee 
 
 test:
-		nodeunit test/pregel.js
+		$(V)nodeunit test/pregel.js
 
 dist: clean init docs build test
 
