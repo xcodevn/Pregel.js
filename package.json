@@ -1,0 +1,39 @@
+{
+  "name": "Pregel.js",
+  "description": "A implementation of Pregel computational model",
+  "keywords": [
+    "actormodel",
+    "nodejs",
+    "pregel"
+  ],
+  "version": "0.0.1",
+  "author": {
+    "name": "Thong T. Nguyen",
+    "email": "xcodevn@gmail.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/xcodevn/Pregel.js.git"
+  },
+  "main": "./lib/pregel.js",
+  "engines": {
+    "node": ">= 0.6.0 && < 0.11.0"
+  },
+  "scripts": {
+    "test": "nodeunit test"
+  },
+  "dependencies": {
+    "simpleactors": "0.0.2"
+  },
+  "devDependencies": {
+    "nodeunit": ">= 0.7.4",
+    "coffee-script": ">= 1.3"
+  },
+  "readmeFilename": "README.md",
+  "_id": "pregeljs@0.0.1",
+  "dist": {
+    "shasum": "ab9690a1b74a507a769b4626578d122b8843f634"
+  },
+  "_from": "pregeljs@",
+  "_resolved": "https://registry.npmjs.org/pregeljs/-/pregeljs-0.0.1.tgz"
+}
