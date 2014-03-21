@@ -16,13 +16,19 @@ clean: clean-docs
 		rm -rf lib/ test/*.js
 
 build:
-		$(V)coffee -o lib/ -c src/ && coffee -c test/pregel.coffee
+		coffee -o lib/ -c src/ && coffee -o test -c test/
 
 shell:
 		$(V)coffee 
 
 test:
-		$(V)nodeunit test/pregel.js
+		nodeunit test/pregel.js
+
+run_worker: build
+	$(V)coffee test/worker.coffee
+
+run_master: build
+	$(V)coffee test/master.coffee
 
 dist: clean init docs build test
 

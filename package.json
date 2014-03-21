@@ -23,7 +23,9 @@
     "test": "nodeunit test"
   },
   "dependencies": {
-    "simpleactors": "0.0.2"
+    "simpleactors": "0.0.2",
+    "msgpack": ">= 0.2.2",
+    "typescript": ">= 0.9.7"
   },
   "devDependencies": {
     "nodeunit": ">= 0.7.4",
